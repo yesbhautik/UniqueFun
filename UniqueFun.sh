@@ -40,6 +40,7 @@ banner() {
         toilet -f ivrit border 'yesbhautik' | boxes -d cat -a hc -p h8 | lolcat
     fi
     echo -e "\e[1;34m For Any Queries Join Me!!!\e[0m"
+    echo " "
     echo -e "\e[1;32m           Follow: bit.ly/yesbhautik \e[0m"
     echo -e "\e[4;32m   YouTube: https://www.youtube.com/c/TheSilentTech \e[0m"
     echo " "
@@ -117,18 +118,18 @@ do
     read ch
     clear
     if [ $ch -eq 1 ];then
-        $PYTHON bomber.py --sms
+        $PYTHON UniqueFun.py --sms
         exit
     elif [ $ch -eq 2 ];then
-        $PYTHON bomber.py --call
+        $PYTHON UniqueFun.py --call
         exit
     elif [ $ch -eq 3 ];then
-        $PYTHON bomber.py --mail
+        $PYTHON UniqueFun.py --mail
         exit
     elif [ $ch -eq 4 ];then
         echo -e "\e[1;34m Downloading Latest Files..."
         rm -f .update
-        $PYTHON bomber.py --update
+        $PYTHON UniqueFun.py --update
         echo -e "\e[1;34m RUN UniqueFun Again..."
         pause
         exit
